@@ -1,22 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Special Wish</title>
+<title>I'm Sorry ❤️</title>
 <style>
-body {
+body{
+  margin:0;
+  font-family:'Comic Sans MS', cursive;
+  background: linear-gradient(135deg,#ffdde1,#ee9ca7);
   text-align:center;
-  font-family: Arial;
-  background: linear-gradient(to right, #ff9a9e, #fad0c4);
-  color:white;
-  padding-top:100px;
+  color:#fff;
+  overflow:hidden;
 }
-h1 { font-size:50px; }
-p { font-size:25px; }
+.container{
+  margin-top:12%;
+}
+h1{
+  font-size:55px;
+  margin-bottom:10px;
+}
+p{
+  font-size:22px;
+  width:70%;
+  margin:auto;
+}
+img{
+  width:250px;
+  margin-top:20px;
+  border-radius:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+.heart{
+  position:absolute;
+  color:white;
+  animation:float 6s linear infinite;
+}
+@keyframes float{
+  0%{transform:translateY(0);opacity:1;}
+  100%{transform:translateY(-800px);opacity:0;}
+}
 </style>
 </head>
+
 <body>
-<h1> sorry 😘 </h1>
-<p>when are we meeting? dear! </p>
-<p>— From ❤️</p>
+
+<div class="container">
+<h1>I'm Really Sorry 🥺</h1>
+<p>
+I didn’t mean to hurt you.  
+You’re special to me and I truly regret what happened.  
+Please forgive me? 💗
+</p>
+
+<img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+
+<p>— From someone who cares about you 💌</p>
+</div>
+
+<script>
+setInterval(()=>{
+  let heart=document.createElement("div");
+  heart.innerHTML="❤";
+  heart.className="heart";
+  heart.style.left=Math.random()*100+"vw";
+  heart.style.fontSize=(20+Math.random()*30)+"px";
+  document.body.appendChild(heart);
+  setTimeout(()=>heart.remove(),6000);
+},300);
+</script>
+
 </body>
 </html>
