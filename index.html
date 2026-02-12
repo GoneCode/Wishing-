@@ -1,68 +1,36 @@
-</body>
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>I'm Sorry ❤️</title>
-<style>
-body{
-  margin:0;
-  font-family:'Comic Sans MS', cursive;
-  background: black;
-  text-align:center;
-  color:#fff;
-  overflow:hidden;
-  font-weight:bold;
-}
-.container{
-  margin-top:12%;
-} 
-p{
-  font-size:30px;   /* increase this */
-} 
-h1,p{
-  text-shadow:0 0 10px #ff69b4, 0 0 50px #ff1493;
-}
-img{
-  width:500px;
-  margin-top:20px;
-  border-radius:20px;
-  box-shadow:0 8px 20px rgba(0,0,0,0.3);
-}
-.heart{
-  position:absolute;
-  color:white;
-  animation:float 6s linear infinite;
-}
-@keyframes float{
-  0%{transform:translateY(0);opacity:1;}
-  100%{transform:translateY(-800px);opacity:0;}
-}
-</style>
+<title>My Resume</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="container">
-<h1> Sorry 😘</h1>
- 💗
-</p>
+<h1>Your Name</h1>
+<p class="title">Java Backend Developer</p>
 
-<img src="https://media.giphy.com/media/G3va31oEEnIkM/giphy.gif">
+<h2>About Me</h2>
+<p>I am a backend developer with experience in Spring Boot, APIs, and Microservices.</p>
 
-<p>— From someone who liked you once 😘😘💌</p>
+<h2>Skills</h2>
+<ul>
+<li>Java</li>
+<li>Spring Boot</li>
+<li>MySQL</li>
+<li>Docker</li>
+</ul>
+
+<h2>Experience</h2>
+<p><b>Company Name</b> – Backend Developer (2021–Present)</p>
+
+<h2>Projects</h2>
+<p>Online Shopping Microservices Project</p>
+
+<h2>Contact</h2>
+<p>Email: youremail@gmail.com</p>
+
 </div>
-
-<script>
-setInterval(()=>{
-  let heart=document.createElement("div");
-  heart.innerHTML="❤";
-  heart.className="heart";
-  heart.style.left=Math.random()*100+"vw";
-  heart.style.fontSize=(20+Math.random()*30)+"px";
-  document.body.appendChild(heart);
-  setTimeout(()=>heart.remove(),6000);
-},300);
-</script>
 
 </body>
 </html>
