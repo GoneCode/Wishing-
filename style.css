@@ -1,0 +1,27 @@
+body{
+font-family: Arial;
+background:#111;
+color:white;
+display:flex;
+justify-content:center;
+}
+
+.container{
+width:700px;
+padding:30px;
+}
+
+h1{
+color:#00ffd5;
+}
+
+.title{
+font-size:20px;
+margin-bottom:30px;
+}
+
+h2{
+color:#ffcc00;
+border-bottom:1px solid gray;
+padding-bottom:5px;
+}
